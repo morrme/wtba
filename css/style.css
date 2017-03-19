@@ -1,0 +1,25 @@
+/*body {
+    background-image: url("/boyz.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}*/
+
+#shows img, #show img {
+    width:100%;
+}
+
+/*@media(min-width:960px) {
+    #shows .col-md-3 .well{
+        height: 390px;
+    }
+
+    #shows .col-md-3 img{
+        height:240px;
+    }
+}*/
+
+/*.jumbotron {
+background-image: url("/boyzwhite.jpg");
+background-size: cover;
+height: 100%;
+}*/

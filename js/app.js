@@ -7,7 +7,7 @@ $(document).ready(() => {
 });
 
 function getShows(){
-    axios.get('http://api.songkick.com/api/3.0/artists/371884/calendar.json?apikey=io09K9l3ebJxmxe2')
+    axios.get('https://api.songkick.com/api/3.0/artists/371884/calendar.json?apikey=io09K9l3ebJxmxe2')
         .then((response) => {
             console.log(response);
             let shows = response.data.resultsPage.results.event;

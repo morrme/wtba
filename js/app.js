@@ -1,10 +1,4 @@
-$(document).ready(() => {
-    $('#searchForm').on('submit', (e) => {
-        let searchText = $('#searchText').val();
-        getMovies(searchText);
-        e.preventDefault();
-        });
-});
+ 
 
 function getShows(){
     axios.get('https://api.songkick.com/api/3.0/artists/371884/calendar.json?apikey=io09K9l3ebJxmxe2')
@@ -41,7 +35,7 @@ function showSelected(id){
 
 function getShow() {
     let showId = sessionStorage.getItem('showId');
-    axios.get('http://api.songkick.com/api/3.0/events/' + showId + '.json?apikey=io09K9l3ebJxmxe2')
+    axios.get('https://api.songkick.com/api/3.0/events/' + showId + '.json?apikey=io09K9l3ebJxmxe2')
     // axios.get('http://www.omdbapi.com?i='+movieId)
         .then((response) => {
             console.log(response);
